@@ -35,6 +35,7 @@ body {
 
 .auth-buttons button {
     margin-left: 10px;
+    background-color: aqua;
 }
 
 .navbar img {
