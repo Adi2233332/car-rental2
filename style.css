@@ -1,3 +1,47 @@
-*{
+* {
     background-color: #080F17;
+    font-family: "Monaco";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin: 0 10vw;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px; /* Adjust the gap value as needed */
+    
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: blue;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+}
+
+.navbar img {
+    height: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
 }
