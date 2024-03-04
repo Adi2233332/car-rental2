@@ -1,6 +1,7 @@
 * {
     background-color: #080F17;
-    font-family: "Monaco";
+    font-family: "PT Sans Caption", Sans-serif;
+    color: white;
 }
 
 body {
@@ -35,17 +36,30 @@ body {
 
 .auth-buttons button {
     margin-left: 10px;
-    background-color: #00FFFF;
     padding: 20px;
     font-size: large;
+    font-weight: bold; /* Explicitly set font weight */
     transition: background-color 0.4s ease; 
 }
 
-.auth-buttons button:hover {
+#login{
+    background-color: #00FFFF;
+    color: black;
+}
+
+#login:hover {
     background-color: transparent;
     border: white 1px solid;
     color: white;
-    /* background-color: aqua; */
+}
+#signup {
+    background-color: transparent;
+    border: white 1px solid;
+}
+#signup:hover{
+    background-color:#00FFFF;
+    border: none;
+    color: black;
 }
 
 .navbar img {
@@ -72,4 +86,20 @@ body {
 footer {
     margin-top: 20px;
     text-align: center;
+}
+.diver p{
+/* border: white 1px solid; */
+font-size: 30px;
+width: 50%;
+}
+.diver h1{
+    font-size: 60px;
+    width: 50%;
+}
+.mainbox{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    height: 100vh; /* Optional: adjust height as needed */
+    width: 80vw;
+    margin: 0 10vw;
 }
