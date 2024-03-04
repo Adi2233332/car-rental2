@@ -18,8 +18,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 25px; /* Adjust the gap value as needed */
-    
+    gap: 45px; /* Adjust the gap value as needed */
+    font-size: x-large;
 }
 
 .nav-links a {
@@ -30,11 +30,21 @@ body {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    color: blue;
+    color: #00FFFF;
 }
 
 .auth-buttons button {
     margin-left: 10px;
+    background-color: #00FFFF;
+    padding: 20px;
+    font-size: large;
+    transition: background-color 0.4s ease; 
+}
+
+.auth-buttons button:hover {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
 }
 
 .navbar img {
