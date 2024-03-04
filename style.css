@@ -45,12 +45,30 @@ body {
     background-color: transparent;
     border: white 1px solid;
     color: white;
+    /* background-color: aqua; */
 }
 
 .navbar img {
     height: 100%;
 }
-
+.elementor-widget-wrap {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.elementor-section .elementor-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.elementor *{
+    box-sizing: border-box;
+}
+.fadeIn {
+    animation-name: fadeIn;
+}
 footer {
     margin-top: 20px;
     text-align: center;
