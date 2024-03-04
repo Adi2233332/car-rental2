@@ -14,12 +14,12 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 15vh;
-    margin: 0 10vw;
+    margin: 0 3%;
 }
 
 .nav-links {
     display: flex;
-    gap: 45px; /* Adjust the gap value as needed */
+    gap: 5vw; /* Adjust the gap value as needed */
     font-size: x-large;
 }
 
@@ -64,6 +64,7 @@ body {
 
 .navbar img {
     height: 100%;
+    /* margin-left: ; */
 }
 .elementor-widget-wrap {
     position: relative;
@@ -98,8 +99,39 @@ width: 50%;
 }
 .mainbox{
     display: flex;
-    justify-content: center; /* Horizontally center */
+    /* justify-content: center; */
+    flex-direction: column; 
     height: 100vh; /* Optional: adjust height as needed */
-    width: 80vw;
+    width: 80%;
     margin: 0 10vw;
+}
+/* .mainbox img{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    /* left: ; 
+    z-index: 1;
+    right: 10vw;
+    top: 10vw;
+} */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    
 }
