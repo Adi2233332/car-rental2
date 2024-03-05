@@ -66,32 +66,58 @@ body {
     height: 100%;
     /* margin-left: ; */
 }
-.main{
-    position: absolute;
-    left: 85%;
-}
-.search{
-    background-color: #00FFFF;
-    position: relative;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-.elementor-section .elementor-container {
+.main {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
+    flex-direction: column;
 }
-.elementor *{
-    box-sizing: border-box;
+
+.search {
+    margin-bottom: 20px;
 }
-.fadeIn {
-    animation-name: fadeIn;
+
+.search-form {
+    display: flex;
+    align-items: center;
 }
-.site{
-    background-color: #1C2632;
+
+.search-form input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.car-types ul,
+.price-range ul {
+    list-style: none;
+    padding: 0;
+}
+
+.car-types li,
+.price-range li {
+    margin-bottom: 5px;
+}
+
+.ratings .star-rating {
+    color: orange;
+}
+
+.checked {
+    color: orange;
+}
+
 footer {
     margin-top: 20px;
     text-align: center;
