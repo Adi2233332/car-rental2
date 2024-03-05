@@ -41,7 +41,9 @@ body {
     font-weight: bold; /* Explicitly set font weight */
     transition: background-color 0.4s ease; 
 }
-
+a:hover{
+    color: #00FFFF;
+}
 #login{
     background-color: #00FFFF;
     color: black;
@@ -69,8 +71,8 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    position:relative;
-    left: 100%;
+    position:absolute;
+    left: 82%;
 }
 
 .search {
@@ -91,7 +93,7 @@ body {
 .search-form button {
     padding: 5px 10px;
     background-color: #00ffff;
-    color: #fff;
+    color: #0b0909;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -111,9 +113,14 @@ h4 {
 .price-range li {
     margin-bottom: 5px;
 }
-
+.text{
+    background-color: whitesmoke;
+}
+.text:hover{
+    background-color:blue ;
+}
 .ratings .star-rating {
-    color: orange;
+    color: rgb(255, 77, 0);
 }
 
 .checked {
