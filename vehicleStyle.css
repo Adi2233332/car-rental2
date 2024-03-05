@@ -74,7 +74,14 @@ a:hover{
     position:absolute;
     left: 82%;
 }
-
+.site{
+    width: 230px;
+    height: 175px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom:20px;
+    background-color: #192636;
+}
 .search {
     margin-bottom: 20px;
 }
@@ -82,6 +89,7 @@ a:hover{
 .search-form {
     display: flex;
     align-items: center;
+    
 }
 
 .search-form input[type="search"] {
@@ -101,27 +109,27 @@ a:hover{
 
 h4 {
     margin-bottom: 10px;
+    background-color: #192636;
 }
 
 .car-types ul,
 .price-range ul {
     list-style: none;
     padding: 0;
+    background-color: #192636;
 }
 
 .car-types li,
 .price-range li {
     margin-bottom: 5px;
+    background-color: #192636;
 }
-.text{
-    background-color: whitesmoke;
-}
-.text:hover{
-    background-color:blue ;
-}
+
 .ratings .star-rating {
     color: rgb(255, 77, 0);
+    background-color: #192636;
 }
+
 .star-rating:hover{
     background-color: #00FFFF;
 }
@@ -144,3 +152,4 @@ footer {
     right: 10vw;
     top: 10vw;
 } */
+
