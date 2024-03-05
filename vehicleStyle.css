@@ -122,6 +122,9 @@ h4 {
 .ratings .star-rating {
     color: rgb(255, 77, 0);
 }
+.star-rating:hover{
+    background-color: #00FFFF;
+}
 
 .checked {
     color: orange;
