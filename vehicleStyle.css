@@ -106,7 +106,7 @@ body {
 }
   
 .rating input:checked ~ label {
-    background-image: url('star-filled.png');
+    background-image: url('https://img.freepik.com/free-vector/star-rating-with-black-background_1017-6189.jpg?size=626&ext=jpg&ga=GA1.1.1012197418.1709657010&semt=ais');
 }
   
 footer {
