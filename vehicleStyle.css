@@ -66,7 +66,13 @@ body {
     height: 100%;
     /* margin-left: ; */
 }
+.main{
+    position: absolute;
+    left: 85%;
+    background-color: #00FFFF;
+}
 .search{
+    background-color: #00FFFF;
     position: relative;
     width: 100%;
     flex-wrap: wrap;
