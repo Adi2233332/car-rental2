@@ -89,6 +89,26 @@ body {
 .fadeIn {
     animation-name: fadeIn;
 }
+.rating {
+    display: inline-block;
+  }
+  
+.rating input {
+    display: none;
+  }
+  
+.rating label {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    background-image: url('star.png');
+    background-size: cover;
+}
+  
+.rating input:checked ~ label {
+    background-image: url('star-filled.png');
+}
+  
 footer {
     margin-top: 20px;
     text-align: center;
