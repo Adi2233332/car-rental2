@@ -89,7 +89,7 @@ body {
 .fadeIn {
     animation-name: fadeIn;
 }
-.elementor-48903 .elementor-element.elementor-element-117ddc1:not(.elementor-motion-effects-element-type-background){
+.site{
     background-color: #1C2632;
 }
 footer {
