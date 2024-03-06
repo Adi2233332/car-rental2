@@ -112,6 +112,7 @@ a:hover{
 h4 {
     margin-bottom: 10px;
     background-color: #192636;
+    text-align: center;
 }
 
 .car-types ul,
@@ -125,6 +126,7 @@ h4 {
 .price-range li {
     margin-bottom: 5px;
     background-color: #192636;
+    text-align: center;
 }
 
 .ratings .star-rating {
@@ -135,7 +137,9 @@ h4 {
 .star-rating:hover{
     background-color: #00FFFF;
 }
-
+.star-rating{
+    text-align: center;
+}
 .checked {
     color: orange;
 }
