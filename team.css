@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 70%;
 }
 
 .navbar {
@@ -36,7 +36,7 @@ body {
 }
 
 .auth-buttons button {
-    margin-left: 10px;
+    margin-left: 30px;
     padding: 20px;
     font-size: large;
     font-weight: bold; /* Explicitly set font weight */
