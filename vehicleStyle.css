@@ -76,6 +76,23 @@ a:hover{
     position:absolute;
     left: 80%;
 }
+.fade-left {
+    animation: fadeLeftAnimation 1s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+@keyframes fadeLeftAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .site{
     width: 230px;
     height: 175px;
