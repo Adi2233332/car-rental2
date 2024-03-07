@@ -70,12 +70,17 @@ a:hover{
     padding-left: 10px;
    /* margin: left 30px;*/
 }
+.total{
+    display: grid;
+}
 .car-list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .fade-left {
     animation: fadeLeftAnimation 5s ease-out forwards;
@@ -130,6 +135,8 @@ a:hover{
     flex-direction: column;
     position:absolute;
     left: 80%;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .fade-right {
