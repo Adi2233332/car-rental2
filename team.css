@@ -68,5 +68,12 @@ a:hover{
 .navbar img {
     height: 100%;
     padding-left: 10px;
-   /* margin: left 30px;*/
+    margin-top: 0;
+    margin-left: 0;
+}
+img{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 300px;
+    border-radius: 150px;
 }
