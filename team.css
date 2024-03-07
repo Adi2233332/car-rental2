@@ -73,7 +73,53 @@ a:hover{
 }
 img{
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 300px;
     height: 300px;
     border-radius: 150px;
+}
+.cr{
+    display: grid;
+}
+.ig{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.text{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 80px;
+    margin-right: 300px;
+}
+.animated-img {
+    animation: fade-in 5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.visible {
+    animation-play-state: paused;
+}
+.text{
+    animation: fadeRightAnimation 5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+@keyframes fadeRightAnimation {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

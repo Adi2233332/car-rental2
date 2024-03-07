@@ -142,7 +142,7 @@ a:hover{
 .fade-right {
     animation: fadeRightAnimation 5s ease-out forwards;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(50px);
 }
 
 @keyframes fadeRightAnimation {
