@@ -1,13 +1,15 @@
 * {
-    background-color: #080F17;
     font-family: "PT Sans Caption", Sans-serif;
     color: white;
+    background-color: #080F17;
 }
 
 body {
+    background-color: #080F17 !important;
     margin: 0;
     padding: 0;
 }
+
 
 .navbar {
     display: flex;
@@ -74,9 +76,12 @@ footer {
     margin-top: 20px;
     text-align: center;
 }
-
+span{
+    color: #00FFFF;
+}
 .diver {
-    margin-top: 2%;
+    margin-top: 10%;
+
 }
 
 .main_diver {
@@ -86,19 +91,22 @@ footer {
 }
 
 .main_diver img {
+    margin-top: 10vh;
     width: 90vw;
+    height: 70vh;
     z-index: 1;
     transform: rotate(-2deg);
 }
 
 .diver p {
-    font-size: 30px;
-    width: 45%;
+    font-size: 23px;
+    width: 55%;
+    margin-top: 5vh;
 }
 
 .diver h1 {
-    font-size: 60px;
-    width: 50%;
+    font-size: 50px;
+    width: 59%;
 }
 
 .mainbox {
@@ -107,6 +115,7 @@ footer {
     height: 100vh;
     width: 80%;
     margin: 0 10vw;
+
 }
 
 .video-container {
@@ -169,7 +178,7 @@ footer {
 }
 
 .testimonial-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -181,6 +190,7 @@ footer {
 .testimonial-description {
     width: 50%;
     margin: 0 auto;
+    font-size: 2rem;
     /* color: #333; */
 }
 
@@ -188,20 +198,27 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 20px;
+    gap: 50vh;
     margin: 5vh 10vw;
 }
-
+.imagestodisplay{
+    position: absolute;
+    left: 50%;
+}
+.review{
+    width: 43%;
+}
 .testimonial-card {
-    /* background-color: #fff; */
+    display: flex;
+    flex-direction: row;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 45%;
 }
 
 .testimonial-text {
     font-size: 1.5rem;
+    width: 30vw;
     text-align: left;
     /* background-color: #fff; */
     color: white;
@@ -215,7 +232,8 @@ footer {
 }
 
 .author-name {
-    margin-left: 20px;
+    /* margin-left: 24px; */
     font-weight: bold;
+    font-size: 30px;
 
 }
