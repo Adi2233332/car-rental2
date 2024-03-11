@@ -1,0 +1,252 @@
+* {
+    font-family: "PT Sans Caption", Sans-serif;
+    color: white;
+    background-color: #080F17;
+}
+
+body {
+    background-color: #080F17 !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin: 0 3%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5vw;
+    /* Adjust the gap value as needed */
+    font-size: x-large;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #00FFFF;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    /* Explicitly set font weight */
+    transition: background-color 0.4s ease;
+}
+
+.login {
+    background-color: #00FFFF;
+    color: black;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+}
+
+#signup {
+    background-color: transparent;
+    border: white 1px solid;
+}
+
+#signup:hover {
+    background-color: #00FFFF;
+    border: none;
+    color: black;
+}
+
+.navbar img {
+    height: 100%;
+}
+
+span {
+    color: #00FFFF;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    margin: 0 10vw;
+
+}
+
+.heading {
+    position: relative;
+    left: 6vw;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin-bottom: 10px;
+}
+
+.boxbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5%;
+    /* align-items: center; */
+    position: relative;
+    left: 6vw;
+    height: 30vh;
+    width: 90%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    border: #777776 1px solid;
+    opacity: 0;
+
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
+.contact-info:nth-child(1) {
+    animation-delay: 0.2s;
+
+}
+
+.contact-info:nth-child(2) {
+    animation-delay: 0.4s;
+
+}
+
+.contact-info:nth-child(3) {
+    animation-delay: 0.6s;
+
+}
+
+.contact-info:nth-child(4) {
+    animation-delay: 0.8s;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 15px;
+    border: #777776 1px solid;
+    border-radius: 4px;
+    outline: none;
+}
+
+
+.contact form .btn:hover {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.contact h2 {
+    margin-bottom: 3rem;
+    position: relative;
+    left: 30vw;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    /* background: var(--second-bg-color); */
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #00FFFF;
+    color: black;
+
+    width: 10vw;
+    position: relative;
+    left: 40%;
+    margin-left: 10px;
+    padding: 18px;
+    font-size: large;
+    font-weight: bold;
+
+    transition: background-color 0.4s ease;
+}
