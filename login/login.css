@@ -1,0 +1,116 @@
+* {
+    font-family: "PT Sans Caption", Sans-serif;
+    color: white;
+    background-color: #080F17;
+}
+
+body {
+    background-color: #080F17 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.contact form .btn:hover {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #00FFFF;
+    color: black;
+    width: 10vw;
+    position: relative;
+    left: 5%;
+    margin-left: 10px;
+    padding: 18px;
+    font-size: large;
+    font-weight: bold;
+
+    transition: background-color 0.4s ease;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+span{
+    color: #00FFFF;
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading {
+    position: relative;
+    left: 3vw;
+    font-size: 60px;
+    font-weight: 700;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20vw;
+    flex-wrap: wrap;
+}
+.mainbox {
+   
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    
+    margin: 10vh 10vw;
+
+}
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
+
+
+}
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width:100%;
+    }
+}
