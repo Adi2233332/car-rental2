@@ -1,0 +1,94 @@
+* {
+    font-family: "PT Sans Caption", Sans-serif;
+    color: white;
+    background-color: #080F17;
+}
+
+body {
+    background-color: #080F17 !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin: 0 3%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 5vw;
+    /* Adjust the gap value as needed */
+    font-size: x-large;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #00FFFF;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    /* Explicitly set font weight */
+    transition: background-color 0.4s ease;
+}
+
+#login {
+    background-color: #00FFFF;
+    color: black;
+}
+
+#login:hover {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+}
+
+#signup {
+    background-color: transparent;
+    border: white 1px solid;
+}
+
+#signup:hover {
+    background-color: #00FFFF;
+    border: none;
+    color: black;
+}
+
+.navbar img {
+    height: 100%;
+}
+span{
+    color: #00FFFF;
+}
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    margin: 0 10vw;
+
+}
+.heading{
+    
+}
+
+.content_box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
