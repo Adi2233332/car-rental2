@@ -68,7 +68,7 @@ a:hover{
 .navbar img {
     height: 100%;
     padding-left: 10px;
-   /* margin: left 30px;*/
+    /* margin: left 30px;*/
 }
 .total{
     display: grid;
@@ -106,7 +106,7 @@ a:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    background-color: #192636;
+    background-color: transparent;
 }
 
 
@@ -114,15 +114,16 @@ a:hover{
     width: 100%;
     height: auto;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .car h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-    background-color: #192636;
+    background-color: transparent;
 }
 .car p{
-    background-color: #192636;
+    background-color: transparent;
 
 }
 
@@ -140,7 +141,7 @@ a:hover{
 }
 
 .fade-right {
-    animation: fadeRightAnimation 5s ease-out forwards;
+    animation: fadeRightAnimation 2s ease-out forwards;
     opacity: 0;
     transform: translateX(50px);
 }
@@ -162,6 +163,7 @@ a:hover{
     border: 1px solid gray;
     margin-bottom:20px;
     background-color: #192636;
+    margin-right: 150px;
 }
 .search {
     margin-bottom: 20px;
@@ -188,7 +190,7 @@ a:hover{
     cursor: pointer;
 }
 
-h4 {
+h3{
     margin-bottom: 10px;
     background-color: #192636;
     text-align: center;
@@ -214,7 +216,8 @@ h4 {
 }
 
 .star-rating:hover{
-    background-color: #00FFFF;
+   background-color: transparent;
+    font-size: 1.5rem;
 }
 .star-rating{
     text-align: center;
@@ -222,7 +225,17 @@ h4 {
 .checked {
     color: orange;
 }
-
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    margin: 0 10vw;
+}
+a{
+    text-decoration: none;
+    font: bold;
+}
 footer {
     margin-top: 20px;
     text-align: center;
