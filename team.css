@@ -20,7 +20,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 5vw; /* Adjust the gap value as needed */
+    gap: 5vw;
+    /* Adjust the gap value as needed */
     font-size: x-large;
 }
 
@@ -39,13 +40,12 @@ body {
     margin-left: 10px;
     padding: 20px;
     font-size: large;
-    font-weight: bold; /* Explicitly set font weight */
-    transition: background-color 0.4s ease; 
+    font-weight: bold;
+    /* Explicitly set font weight */
+    transition: background-color 0.4s ease;
 }
-a:hover{
-    color: #00FFFF;
-}
-#login{
+
+#login {
     background-color: #00FFFF;
     color: black;
 }
@@ -55,22 +55,22 @@ a:hover{
     border: white 1px solid;
     color: white;
 }
+
 #signup {
     background-color: transparent;
     border: white 1px solid;
 }
-#signup:hover{
-    background-color:#00FFFF;
+
+#signup:hover {
+    background-color: #00FFFF;
     border: none;
     color: black;
 }
 
 .navbar img {
     height: 100%;
-    padding-left: 10px;
-    margin-top: 0;
-    margin-left: 0;
 }
+
 img{
     margin-top: 50px;
     margin-left: 300px;
