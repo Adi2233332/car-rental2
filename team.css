@@ -91,7 +91,7 @@ img{
     margin-right: 300px;
 }
 .animated-img {
-    animation: fade-in 5s ease-in-out forwards;
+    animation: fade-in 2s ease-in-out forwards;
     opacity: 0;
 }
 
@@ -108,7 +108,7 @@ img{
     animation-play-state: paused;
 }
 .text{
-    animation: fadeRightAnimation 5s ease-out forwards;
+    animation: fadeRightAnimation 2s ease-out forwards;
     opacity: 0;
     transform: translateX(50px);
 }
