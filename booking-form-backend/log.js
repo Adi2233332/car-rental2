@@ -3,17 +3,22 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware to parse JSON bodies
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// Define a route to handle login form submissions
+// Routes
 app.post('/login', (req, res) => {
-    const { full_name, email, mobile_number, email_subject } = req.body;
-    // Here you can process the form data (e.g., validate credentials, store in database, etc.)
-    // For now, just log the form data to the console
-    console.log('Login form data:', { full_name, email, mobile_number, email_subject });
-    res.send('Login successful!');
+    const { email, password } = req.body;
+    // Check if email and password match a user in your database
+    // For simplicity, let's assume there's a hardcoded user
+    const user = { email: 'example@example.com', password: 'password123' };
+    if (email === user.email && password === user.password) {
+        // Redirect to home page or show login successful message
+        res.send('Login successful! Redirecting to home page...');
+    } else {
+        // If login fails, ask to sign up
+        res.send('Login failed! Please sign up.');
+    }
 });
 
 // Start the server
