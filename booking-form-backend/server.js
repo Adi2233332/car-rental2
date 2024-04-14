@@ -2,22 +2,30 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = 3000; // Choose any port you like
 
-// Middleware to parse JSON and urlencoded form data
+// Parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Parse application/json
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Route to handle form submission
-app.post('/submit', (req, res) => {
-    const { pickup, dropoff, date, time } = req.body;
-    // Here you can process the form data, save it to a database, etc.
-    // For this example, let's just log the data to the console
-    console.log('Form Data:', { pickup, dropoff, date, time });
-    res.send('Form submitted successfully!');
+app.post('/submit-form', (req, res) => {
+  // Access form data from req.body
+  const { pickup, dropoff, date, time } = req.body;
+
+  // Check the input
+  console.log('Pickup Point:', pickup);
+  console.log('Drop-off Point:', dropoff);
+  console.log('Date:', date);
+  console.log('Time:', time);
+
+  // Send a response
+  res.send('Form submitted successfully!');
 });
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
