@@ -118,6 +118,7 @@ span{
 
 }
 
+
 .video-container {
     position: relative;
     width: 100%;
@@ -125,6 +126,7 @@ span{
     overflow: hidden;
     z-index: 0;
 }
+
 
 #bg-video {
     position: absolute;
