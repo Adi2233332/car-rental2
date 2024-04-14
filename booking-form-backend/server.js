@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Route to handle form submission
-app.post('/submit-form', (req, res) => {
+app.post('book.html', (req, res) => {
   // Access form data from req.body
   const { pickup, dropoff, date, time } = req.body;
 
