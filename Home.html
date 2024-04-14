@@ -136,6 +136,29 @@
       crossorigin="anonymous"></script>
 
   </footer>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        const formData = new FormData(this);
+
+        // Send AJAX request to the server
+        fetch('/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data); // Log the response from the server
+            // You can handle the response here (e.g., show a success message)
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Handle any errors here
+        });
+    });
+</script>
 
 </body>
 
