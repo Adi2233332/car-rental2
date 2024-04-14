@@ -1,26 +1,39 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
-app.use(express.json());
+app.use(bodyParser.json());
 
-// Mock database of users
-const users = [
-    { id: 1, fullName: 'John Doe', email: 'john@example.com', password: 'password123' },
-    { id: 2, fullName: 'Jane Smith', email: 'jane@example.com', password: 'password456' }
+// Sample user data (stored in memory)
+let users = [
+    { username: 'user1', email: 'user1@example.com', password: 'password1' },
+    { username: 'user2', email: 'user2@example.com', password: 'password2' }
 ];
 
-// Endpoint to handle login requests
-app.post('/login', (req, res) => {
-    const { email, password } = req.body;
-    const user = users.find(user => user.email === email && user.password === password);
-    if (user) {
-        // If login successful, send a success message
-        res.json({ message: 'Login successful', user });
+// Endpoint for signing up
+app.post('signUp.html', (req, res) => {
+    const newUser = req.body;
+    // Check if the username or email already exists
+    const existingUser = users.find(user => user.username === newUser.username || user.email === newUser.email);
+    if (existingUser) {
+        res.status(400).json({ message: 'Username or email already exists' });
     } else {
-        // If login fails, send a failure message
-        res.status(401).json({ message: 'Invalid email or password' });
+        users.push(newUser);
+        res.status(201).json({ message: 'User signed up successfully' });
+    }
+});
+
+// Endpoint for logging in
+app.post('login.html', (req, res) => {
+    const { username, password } = req.body;
+    // Find user by username and password
+    const user = users.find(user => user.username === username && user.password === password);
+    if (user) {
+        res.json({ message: 'Login successful' });
+    } else {
+        res.status(401).json({ message: 'Invalid username or password' });
     }
 });
 
