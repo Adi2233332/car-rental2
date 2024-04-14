@@ -1,0 +1,100 @@
+* {
+    font-family: "PT Sans Caption", Sans-serif;
+    color: white;
+    background-color: #080F17;
+}
+
+body {
+    background-color: #080F17 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.contact form .btn:hover {
+    background-color: transparent;
+    border: white 1px solid;
+    color: white;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #00FFFF;
+    color: black;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    font-size: large;
+    font-weight: bold;
+    display: block; /* Ensure the button takes up full width */
+    transition: background-color 0.4s ease;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+span {
+    color: #00FFFF;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: auto; /* Center the form horizontally */
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center; /* Center align the text */
+    margin-top: 5vh; /* Add margin to vertically center the heading */
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+    width: 100%; /* Full width for input fields */
+}
+
+.contact form textarea {
+    width: calc(100% - 20px); /* Adjust width for textarea */
+    resize: none;
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}

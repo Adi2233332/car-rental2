@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Ride</title>
+  <link rel="stylesheet" href="bookride.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Book Your Ride</h1>
+  </div>
+  <div class="contact">
+    <form id="bookingForm">
+      <div class="input-box">
+        <label for="pickup">Pickup Point:</label>
+        <input type="text" id="pickup" name="pickup" required>
+      </div>
+      <div class="input-box">
+        <label for="dropoff">Drop-off Point:</label>
+        <input type="text" id="dropoff" name="dropoff" required>
+      </div>
+      <div class="input-box">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="input-box">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <button class="btn" type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <script src="ride.js"></script>
+</body>
+
+</html>
