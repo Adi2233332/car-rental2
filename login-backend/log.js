@@ -13,7 +13,7 @@ let users = [
 ];
 
 // Endpoint for signing up
-app.post('signUp.html', (req, res) => {
+app.post(sign-up.xlsx, (req, res) => {
     const newUser = req.body;
     // Check if the username or email already exists
     const existingUser = users.find(user => user.username === newUser.username || user.email === newUser.email);
@@ -26,7 +26,7 @@ app.post('signUp.html', (req, res) => {
 });
 
 // Endpoint for logging in
-app.post('login.html', (req, res) => {
+app.post(/login/login.html, (req, res) => {
     const { username, password } = req.body;
     // Find user by username and password
     const user = users.find(user => user.username === username && user.password === password);
